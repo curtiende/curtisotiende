@@ -1,210 +1,167 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Curtis Otiende | Security, ICT & Administrative Professional</title>
-<meta name="description" content="Computer Science graduate with 10+ years experience in ICT support, administration, records management, customer support, and public service operations.">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-<style>
-*{margin:0;padding:0;box-sizing:border-box}
-:root{--primary:#2563eb;--primary-dark:#1d4ed8;--secondary:#64748b;--dark:#0f172a;--light:#f8fafc;--white:#fff;--border:#e2e8f0;--success:#10b981}
-body{font-family:Inter,sans-serif;color:var(--dark);line-height:1.6}
-nav{position:fixed;top:0;width:100%;background:#ffffffee;backdrop-filter:blur(10px);border-bottom:1px solid var(--border);z-index:1000}
-.nav-container{max-width:1200px;margin:auto;padding:1rem 2rem;display:flex;justify-content:space-between}
-.nav-links{display:flex;gap:2rem;list-style:none}
-.nav-links a{text-decoration:none;color:var(--secondary)}
-.hero{margin-top:80px;max-width:1200px;margin-left:auto;margin-right:auto;padding:4rem 2rem;display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:center}
-.highlight{color:var(--primary)}
-.hero h1{font-size:3.5rem}
-.hero-subtitle{font-size:1.25rem;color:var(--secondary);margin:1rem 0}
-.hero-description{color:var(--secondary);margin-bottom:2rem}
-.btn{padding:.9rem 1.5rem;border-radius:8px;text-decoration:none;font-weight:600}
-.btn-primary{background:var(--primary);color:#fff}
-.btn-secondary{border:2px solid var(--border);color:var(--dark);margin-left:1rem}
-.hero img{max-width:400px;width:100%;border-radius:20px; padding-top: 1px}
-section{max-width:1200px;margin:auto;padding:5rem 2rem}
-.section-header{text-align:center;margin-bottom:3rem}
-.section-header h2{font-size:2.5rem}
-.about{background:var(--light)}
-.about-grid,.contact-grid{display:grid;grid-template-columns:2fr 1fr;gap:3rem}
-.about-highlights{display:grid;grid-template-columns:repeat(2,1fr);gap:1rem;margin-top:2rem}
-.highlight-card,.skill-category,.timeline-content,.about-sidebar{background:#fff;padding:1.5rem;border-radius:16px}
-.skills-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:2rem}
-.skill-list{padding-left:1rem}
-.experience{background:var(--light)}
-.timeline-item{margin-bottom:2rem}
-.timeline-date{color:var(--primary);font-weight:700}
-.contact-method{display:block;padding:1rem;background:var(--light);margin-bottom:1rem;border-radius:12px;text-decoration:none;color:inherit}
-.contact-cta{background:var(--dark);color:#fff;padding:2rem;border-radius:20px}
-footer{background:var(--dark);color:#fff;text-align:center;padding:2rem}
-@media(max-width:968px){
-.hero,.about-grid,.contact-grid,.skills-grid{grid-template-columns:1fr}
-.hero{text-align:center}
-.nav-links{display:none}
-}
-</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Curtis Otiende — Computer Science graduate, frontend developer, IT support professional and technology entrepreneur.">
+  <meta name="author" content="Curtis Otiende">
+  <title>Curtis Otiende | Computer Science & Technology</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <header class="site-header">
+    <nav class="nav container">
+      <a class="brand" href="#home">CO<span>.</span></a>
+      <button class="menu-toggle" aria-label="Toggle navigation">☰</button>
+      <div class="nav-links">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#experience">Experience</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </nav>
+  </header>
 
-<nav>
-<div class="nav-container">
-<div><strong>CO.</strong></div>
-<ul class="nav-links">
-<li><a href="#about">About</a></li>
-<li><a href="#skills">Skills</a></li>
-<li><a href="#experience">Experience</a></li>
-<li><a href="#education">Education</a></li>
-<li><a href="#contact">Contact</a></li>
-</ul>
-</div>
-</nav>
+  <main>
+    <section id="home" class="hero">
+      <div class="container hero-grid">
+        <div>
+          <p class="eyebrow">COMPUTER SCIENCE • FRONTEND • IT</p>
+          <h1>Hi, I'm <span>Curtis Otiende</span>.</h1>
+          <p class="hero-text">
+            Computer Science graduate and technology professional focused on frontend development,
+            IT support, digital transformation and practical software solutions.
+          </p>
+          <div class="hero-actions">
+            <a class="btn primary" href="#projects">View My Work</a>
+            <a class="btn secondary" href="#contact">Let's Connect</a>
+          </div>
+          <div class="quick-links">
+            <a href="https://github.com/" target="_blank" rel="noreferrer">GitHub</a>
+            <a href="https://www.linkedin.com/" target="_blank" rel="noreferrer">LinkedIn</a>
+            <a href="mailto:eshopack@yandex.com">Email</a>
+          </div>
+        </div>
+        <div class="profile-card">
+          <div class="avatar">CO</div>
+          <h2>Technology & Digital Solutions</h2>
+          <p>Kenya • Available for opportunities</p>
+          <div class="stats">
+            <div><strong>CS</strong><small>Graduate</small></div>
+            <div><strong>JS</strong><small>Frontend</small></div>
+            <div><strong>IT</strong><small>Support</small></div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-<section class="hero">
-<div>
-<h1>ICT & Administrative <span class="highlight">Professional</span></h1>
-<p class="hero-subtitle">Computer Science Graduate | Customer Support | ICT Support | Records Management</p>
-<p class="hero-description">
-Computer Science graduate with over 10 years of experience in public service, administration, ICT support, records management, technical troubleshooting, and customer service. I help organizations improve operations, support users, and manage information efficiently.
-</p>
-<a href="Curtis_Otiende_CV.pdf" class="btn btn-primary">📄 Download CV</a>
-<a href="#contact" class="btn btn-secondary">Contact Me</a>
-</div>
-<div>
-<img src="profile.jpg" alt="Curtis Otiende">
-</div>
-</section>
+    <section id="about" class="section">
+      <div class="container narrow">
+        <p class="section-label">ABOUT ME</p>
+        <h2>Building useful technology from real-world problems.</h2>
+        <p>
+          I am a Computer Science professional with hands-on interests in web development,
+          IT support, networking, business systems and digital transformation. My approach
+          combines practical problem-solving with user-focused design.
+        </p>
+        <p>
+          I am particularly interested in building systems that simplify operations for
+          businesses, schools, NGOs and public-sector organizations.
+        </p>
+      </div>
+    </section>
 
-<section id="about" class="about">
-<div class="section-header">
-<h2>About Me</h2>
-<p>Technology, administration and customer support expertise</p>
-</div>
-<div class="about-grid">
-<div>
-<h3>Experienced ICT, Administration & Customer Support Professional</h3>
-<p>I am a Computer Science graduate and public service professional with extensive experience in office administration, ICT support, records management, technical troubleshooting, and customer service.</p>
-<p>My background combines technology and administration, allowing me to bridge the gap between technical systems and business operations. I am comfortable working with digital platforms, databases, spreadsheets, documentation, and customer support processes.</p>
-<p>I am highly organized, detail-oriented, and committed to delivering excellent service while maintaining professionalism and confidentiality.</p>
+    <section id="skills" class="section alt">
+      <div class="container">
+        <p class="section-label">TECHNICAL SKILLS</p>
+        <h2>Tools I work with</h2>
+        <div class="skill-grid">
+          <article><h3>Frontend</h3><p>HTML5, CSS3, JavaScript, React JS, Bootstrap, responsive UI design.</p></article>
+          <article><h3>Backend & Data</h3><p>Firebase, MySQL, REST APIs, authentication and data-driven applications.</p></article>
+          <article><h3>Platforms</h3><p>WordPress, WooCommerce, Git, GitHub and web deployment workflows.</p></article>
+          <article><h3>IT & Networking</h3><p>Computer troubleshooting, network support, routers, connectivity and user support.</p></article>
+          <article><h3>Systems Analysis</h3><p>Requirements gathering, SRS documentation, SDLC, process analysis and system design.</p></article>
+          <article><h3>Digital Transformation</h3><p>Business process digitization, workflow design, reporting and operational systems.</p></article>
+        </div>
+      </div>
+    </section>
 
-<div class="about-highlights">
-<div class="highlight-card"><h3>10+</h3><p>Years Experience</p></div>
-<div class="highlight-card"><h3>100+</h3><p>Users Supported</p></div>
-<div class="highlight-card"><h3>5+</h3><p>Administrative Roles</p></div>
-<div class="highlight-card"><h3>Remote</h3><p>Work Ready</p></div>
-</div>
-</div>
+    <section id="projects" class="section">
+      <div class="container">
+        <p class="section-label">SELECTED PROJECTS</p>
+        <h2>What I'm building</h2>
+        <div class="project-grid">
+          <article class="project">
+            <span class="project-number">01</span>
+            <h3>EBOS — Eshopack Business Operating System</h3>
+            <p>A modular business operating platform concept covering CRM, projects, HR, finance, procurement, documents, reporting and administration.</p>
+            <div class="tags"><span>Product Design</span><span>Systems Analysis</span><span>Web</span></div>
+          </article>
+          <article class="project">
+            <span class="project-number">02</span>
+            <h3>School Management System</h3>
+            <p>A proposed operational platform for school staff, payroll, student records, inventory, accounts and management reporting.</p>
+            <div class="tags"><span>Requirements</span><span>Database</span><span>Automation</span></div>
+          </article>
+          <article class="project">
+            <span class="project-number">03</span>
+            <h3>Police Operations Digitization</h3>
+            <p>A long-term digital transformation concept for replacing manual operational forms and workflows with secure digital systems.</p>
+            <div class="tags"><span>SDLC</span><span>Workflow</span><span>Digital Transformation</span></div>
+          </article>
+          <article class="project">
+            <span class="project-number">04</span>
+            <h3>React + Firebase Applications</h3>
+            <p>Interactive web applications using React for the interface and Firebase for authentication, data and real-time functionality.</p>
+            <div class="tags"><span>React</span><span>Firebase</span><span>JavaScript</span></div>
+          </article>
+        </div>
+      </div>
+    </section>
 
-<div class="about-sidebar">
-<p><strong>Location:</strong> Kwale, Kenya</p><hr><br>
-<p><strong>Education:</strong> BSc Computer Science</p><br>
-<p><strong>Profession:</strong> Public Service Professional</p><br>
-<p><strong>Languages:</strong> English & Swahili</p><br>
-<p><strong>Availability:</strong> Open to Opportunities</p>
-</div>
-</div>
-</section>
+    <section id="experience" class="section alt">
+      <div class="container">
+        <p class="section-label">EXPERIENCE</p>
+        <h2>A combination of technology and operational experience.</h2>
+        <div class="timeline">
+          <div class="timeline-item">
+            <span>2013 — Present</span>
+            <div><h3>Kenya National Police Service</h3><p>Operational and public-service experience with a strong interest in technology, process improvement and digital transformation.</p></div>
+          </div>
+          <div class="timeline-item">
+            <span>2009 — 2012</span>
+            <div><h3>IT & Technical Roles</h3><p>Experience spanning IT support, computer application training and technical operations.</p></div>
+          </div>
+          <div class="timeline-item">
+            <span>2025 — Present</span>
+            <div><h3>Software & Business Projects</h3><p>Developing web applications and digital business solutions through Eshopack Consultants Ltd.</p></div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-<section id="skills">
-<div class="section-header">
-<h2>Core Competencies</h2>
-<p>Administrative, technical and customer support expertise</p>
-</div>
+    <section id="contact" class="section contact">
+      <div class="container contact-box">
+        <div>
+          <p class="section-label">GET IN TOUCH</p>
+          <h2>Have a project or opportunity?</h2>
+          <p>I'm open to technology, frontend development, IT support and digital transformation opportunities.</p>
+        </div>
+        <div class="contact-actions">
+          <a class="btn primary" href="mailto:eshopack@yandex.com">Email Me</a>
+          <a class="btn secondary" href="https://github.com/" target="_blank" rel="noreferrer">GitHub</a>
+        </div>
+      </div>
+    </section>
+  </main>
 
-<div class="skills-grid">
-<div class="skill-category">
-<h3>Administrative & Operations</h3>
-<ul class="skill-list">
-<li>Office Administration</li>
-<li>Records Management</li>
-<li>Documentation & Filing</li>
-<li>Report Writing</li>
-<li>Correspondence Management</li>
-<li>Data Entry & Record Keeping</li>
-</ul>
-</div>
-
-<div class="skill-category">
-<h3>ICT Support</h3>
-<ul class="skill-list">
-<li>Computer Troubleshooting</li>
-<li>Hardware Installation & Maintenance</li>
-<li>Operating System Installation</li>
-<li>Microsoft Office Suite</li>
-<li>Basic Networking</li>
-<li>Technical Support</li>
-</ul>
-</div>
-
-<div class="skill-category">
-<h3>Customer Support & Communication</h3>
-<ul class="skill-list">
-<li>Email Communication</li>
-<li>Customer Service</li>
-<li>Problem Resolution</li>
-<li>User Assistance</li>
-<li>Team Collaboration</li>
-<li>Remote Work Tools</li>
-</ul>
-</div>
-</div>
-</section>
-
-<section id="experience" class="experience">
-<div class="section-header">
-<h2>Professional Experience</h2>
-</div>
-
-<div class="timeline-item"><div class="timeline-content"><div class="timeline-date">2023 – Present</div><h3>Sub-County Clerk / Secretary</h3><h4>Administration Police Service, Msambweni</h4></div></div>
-
-<div class="timeline-item"><div class="timeline-content"><div class="timeline-date">2021 – 2023</div><h3>Records Assistant</h3><h4>Administration Police Service (ASTU)</h4></div></div>
-
-<div class="timeline-item"><div class="timeline-content"><div class="timeline-date">2018 – 2021</div><h3>Records Assistant</h3><h4>Anti Stock Theft Unit</h4></div></div>
-
-<div class="timeline-item"><div class="timeline-content"><div class="timeline-date">2014 – 2018</div><h3>Police Constable / General Duty Officer</h3><h4>Anti Stock Theft Unit</h4></div></div>
-
-<div class="timeline-item"><div class="timeline-content"><div class="timeline-date">2011 – 2012</div><h3>IT Technician</h3><h4>Skylight Chemicals Ltd</h4></div></div>
-
-<div class="timeline-item"><div class="timeline-content"><div class="timeline-date">2009</div><h3>Computer Applications Trainer</h3><h4>Rechase Institute of Business Studies</h4></div></div>
-</section>
-
-<section id="education">
-<div class="section-header"><h2>Education & Certifications</h2></div>
-<div class="about-sidebar">
-<p><strong>Bachelor of Science in Computer Science</strong> – University of the People (2025)</p><br>
-<p><strong>Associate of Science in Computer Science</strong> – University of the People (2024)</p><br>
-<p><strong>Undergraduate Certificate in Network & Application Security</strong></p><br>
-<p><strong>Basic Recruit Police Constable Course</strong></p>
-</div>
-</section>
-
-<section id="contact">
-<div class="section-header">
-<h2>Get In Touch</h2>
-<p>Available for Remote Administrative, Customer Support and ICT Roles</p>
-</div>
-
-<div class="contact-grid">
-<div>
-<h3>Let's Work Together</h3>
-<p>I am currently seeking remote opportunities in customer support, administrative assistance, enrollment support, operations, records management, ICT support, helpdesk services, and related professional roles.</p>
-
-<a class="contact-method" href="mailto:curtisotiende@gmail.com">✉️ curtisotiende@gmail.com</a>
-<a class="contact-method" href="tel:+254724012581">📞 +254 724 012 581</a>
-<a class="contact-method" href="https://linkedin.com/in/curtis-otiende-b27352249">💼 LinkedIn Profile</a>
-</div>
-
-<div class="contact-cta">
-<h3>Open to Opportunities</h3>
-<p>Ready to contribute to customer support, administrative operations, ICT support, and records management roles.</p>
-</div>
-</div>
-</section>
-
-<footer>
-<p>&copy; 2026 Curtis Otiende. ICT Support, Administration & Customer Service Professional.</p>
-</footer>
-
+  <footer>
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> Curtis Otiende. All rights reserved.</p>
+      <a href="#home">Back to top ↑</a>
+    </div>
+  </footer>
+  <script src="script.js"></script>
 </body>
 </html>
